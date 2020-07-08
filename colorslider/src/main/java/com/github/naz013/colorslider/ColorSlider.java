@@ -325,7 +325,7 @@ public class ColorSlider extends View {
         }
     }
 
-    private boolean processTouch(MotionEvent event) {
+    public boolean processTouch(MotionEvent event) {
         if (event.getAction() == MotionEvent.ACTION_DOWN) return true;
         else if (event.getAction() == MotionEvent.ACTION_MOVE || event.getAction() == MotionEvent.ACTION_UP) {
             updateView(event.getX(), event.getY());
